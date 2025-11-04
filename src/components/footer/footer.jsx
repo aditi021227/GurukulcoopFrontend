@@ -81,7 +81,7 @@ export default function Footer() {
                         {link.label}
                         <span
                           aria-hidden
-                          className={`block h-[2px] bg-[#FFB300] absolute left-0 -bottom-1 transition-all duration-200 ${
+                          className={`block h-0.5 bg-[#FFB300] absolute left-0 -bottom-1 transition-all duration-200 ${
                             isActive ? "w-full" : "w-0 group-hover:w-full"
                           }`}
                         />
@@ -100,7 +100,7 @@ export default function Footer() {
               {/* Location */}
               <div className="flex items-start gap-3">
                 <svg
-                  className="w-5 h-5 text-[#FFB300] flex-shrink-0 mt-0.5"
+                  className="w-5 h-5 text-[#FFB300] shrink-0 mt-0.5"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="1.8"
@@ -116,14 +116,14 @@ export default function Footer() {
                   <div className="font-medium text-[#FFF8E1]">
                     GurukulCoop Office
                   </div>
-                  <p className="text-sm">123 Community Lane, Jaipur, Rajasthan</p>
+                  <p className="text-sm">Plot 251, 2nd floor Udyog Vihar, Phase IV, Sector 18, Gurugram, Haryana, 122015</p>
                 </div>
               </div>
 
               {/* Phone */}
               <div className="flex items-center gap-3">
                 <svg
-                  className="w-5 h-5 text-[#FFB300] flex-shrink-0"
+                  className="w-5 h-5 text-[#FFB300] shrink-0"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="1.8"
@@ -148,7 +148,7 @@ export default function Footer() {
               {/* Email */}
               <div className="flex items-center gap-3">
                 <svg
-                  className="w-5 h-5 text-[#FFB300] flex-shrink-0"
+                  className="w-5 h-5 text-[#FFB300] shrink-0"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="1.8"

@@ -134,7 +134,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="rounded-2xl overflow-hidden border border-[#004D40]/10 border-l-4 border-[#FFB300] hover:border-[#004D40] hover:shadow-[0_28px_90px_rgba(0,77,64,0.18)] transition transform hover:-translate-y-1">
+            <div className="rounded-2xl overflow-hidden border border-[#004D40]/10 border-l-4 hover:border-[#004D40] hover:shadow-[0_28px_90px_rgba(0,77,64,0.18)] transition transform hover:-translate-y-1">
               {/* fixed-size wrapper to control hero image height */}
               <div className="w-full h-64 md:h-96 overflow-hidden">
                 <img
@@ -220,7 +220,7 @@ export default function About() {
 
             {/* Highlighted cards */}
             <div className="space-y-4">
-              <div className="p-6 rounded-lg bg-[#FFF8E1] border border-[#004D40]/10 border-l-4 border-[#FFB300] hover:border-[#004D40] hover:shadow-[0_20px_80px_rgba(0,77,64,0.14)] transition transform hover:-translate-y-1">
+              <div className="p-6 rounded-lg bg-[#FFF8E1] border border-l-4 border-[#FFB300] hover:border-[#004D40] hover:shadow-[0_20px_80px_rgba(0,77,64,0.14)] transition transform hover:-translate-y-1">
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-md bg-[#004D40] text-white">
                     <ProgramIcon name="education" className="w-6 h-6" />
@@ -266,7 +266,7 @@ export default function About() {
             {programs.map((p, idx) => (
               <article
                 key={idx}
-                className="p-6 rounded-lg bg-[#FFF8E1] shadow-sm border border-[#004D40]/10 border-l-4 border-[#FFB300] hover:border-[#004D40] hover:shadow-[0_28px_90px_rgba(0,77,64,0.18)] transition transform hover:-translate-y-1"
+                className="p-6 rounded-lg bg-[#FFF8E1] shadow-sm border border-[#004D40]/10 border-l-4 hover:border-[#004D40] hover:shadow-[0_28px_90px_rgba(0,77,64,0.18)] transition transform hover:-translate-y-1"
               >
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-md bg-[#004D40] flex items-center justify-center text-white shrink-0">
@@ -317,7 +317,7 @@ export default function About() {
           <div className="space-y-12">
             {timeline.map((step, i) => (
               <div key={i} className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-10">
-                <div className="flex items-center gap-4 flex-shrink-0 relative">
+                <div className="flex items-center gap-4 shrink-0 relative">
                   <svg aria-hidden className="w-16 h-16 md:w-20 md:h-20 text-[#004D40] animate-[arrowMove_2.5s_ease-in-out_infinite]" viewBox="0 0 64 64" fill="none">
                     <path d="M6 32h42" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
                     <path d="M40 20l18 12-18 12" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
@@ -328,7 +328,7 @@ export default function About() {
                   </div>
                 </div>
 
-                <div className="flex-1 p-6 rounded-lg bg-[#FFF8E1] border border-[#004D40]/20 border-l-4 border-[#FFB300] hover:border-[#004D40] hover:shadow-[0_20px_80px_rgba(0,77,64,0.14)] transition transform hover:-translate-y-1">
+                <div className="flex-1 p-6 rounded-lg bg-[#FFF8E1] border border-[#004D40]/20 border-l-4 hover:border-[#004D40] hover:shadow-[0_20px_80px_rgba(0,77,64,0.14)] transition transform hover:-translate-y-1">
                   <div className="flex items-center gap-3">
                     <div className="p-2 rounded-md bg-[#FFB300] text-[#004D40]">{step.icon}</div>
                     <h3 className="font-extrabold text-lg">{step.title}</h3>

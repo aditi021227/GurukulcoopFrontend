@@ -58,7 +58,7 @@ export default function Home() {
     <div className="min-h-screen text-[#004D40]">
       {/* HERO */}
      <section
-  className="relative text-[#004D40]"
+  className="relative text-[#ffffff]"
   style={{
     backgroundImage: "url('/images/homepage/community.jpg')",
     backgroundSize: "cover",
@@ -74,7 +74,7 @@ export default function Home() {
         <h1 className="text-3xl md:text-5xl font-extrabold leading-snug tracking-tight">
           Welcome to GurukulCoop
         </h1>
-        <p className="text-[#004D40]/80 max-w-xl">
+        <p className="text-[#ffffff]/80 max-w-xl">
           A community-driven cooperative focused on financial inclusion, skills sharing, and local growth.
         </p>
 
@@ -88,7 +88,7 @@ export default function Home() {
 
     <a
   href="#how"
-  className="inline-flex items-center px-4 py-3 rounded-full border-[3px] border-[#FFB300]/60 text-[#FFB300] hover:border-[#004D40] hover:text-[#004D40] transition transform hover:-translate-y-1"
+  className="inline-flex items-center px-4 py-3 rounded-full border-[3px] border-[#ffffff]/60 text-[#ffffff] hover:border-[#ffd900] hover:text-[#ffea00] transition transform hover:-translate-y-1"
 >
   <svg
     className="w-4 h-4 mr-2"
@@ -104,7 +104,7 @@ export default function Home() {
 
         </div>
 
-        <div className="flex items-center gap-6 mt-4 text-sm text-[#004D40]/80">
+        <div className="flex items-center gap-6 mt-4 text-sm font-bold text-[#ffffff]">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-full bg-[#FFB300] text-[#004D40] flex items-center justify-center">
               <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">
@@ -113,7 +113,7 @@ export default function Home() {
               </svg>
             </div>
             <div>
-              <div className="font-semibold text-[#004D40]">1000+</div>
+              <div className="font-semibold text-[#ffffff]">1000+</div>
               <div>Members</div>
             </div>
           </div>
@@ -126,7 +126,7 @@ export default function Home() {
               </svg>
             </div>
             <div>
-              <div className="font-semibold text-[#004D40]">150+</div>
+              <div className="font-semibold text-[#ffffff]">150+</div>
               <div>Events hosted</div>
             </div>
           </div>
@@ -139,7 +139,7 @@ export default function Home() {
               </svg>
             </div>
             <div>
-              <div className="font-semibold text-[#004D40]">20</div>
+              <div className="font-semibold text-[#ffffff]">20</div>
               <div>Communities</div>
             </div>
           </div>
@@ -164,7 +164,7 @@ export default function Home() {
           </div>
 
           <div className="mt-6 grid grid-cols-1 gap-4">
-            <div className="p-4 rounded-lg bg-[#FFF8E1]/10 border border-[#FFF8E1]/20 border-l-4 border-[#004D40] hover:border-[#FFB300] hover:shadow-[0_14px_54px_rgba(255,179,0,0.14)] transition transform hover:-translate-y-1">
+            <div className="p-4 rounded-lg bg-[#FFF8E1]/10 border border-[#FFF8E1]/20 border-l-4 hover:border-[#FFB300] hover:shadow-[0_14px_54px_rgba(255,179,0,0.14)] transition transform hover:-translate-y-1">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <div className="p-2 rounded-md bg-[#FFF8E1] text-[#004D40]">
@@ -179,7 +179,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="p-4 rounded-lg bg-[#FFF8E1]/10 border border-[#FFF8E1]/20 border-l-4 border-[#004D40] hover:border-[#FFB300] hover:shadow-[0_14px_54px_rgba(255,179,0,0.14)] transition transform hover:-translate-y-1">
+            <div className="p-4 rounded-lg bg-[#FFF8E1]/10 border border-[#FFF8E1]/20 border-l-4 hover:border-[#FFB300] hover:shadow-[0_14px_54px_rgba(255,179,0,0.14)] transition transform hover:-translate-y-1">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <div className="p-2 rounded-md bg-[#FFF8E1] text-[#004D40]">
@@ -225,7 +225,7 @@ export default function Home() {
             {features.map((f, i) => (
               <article
                 key={i}
-                className="p-6 rounded-lg bg-[#FFF8E1] shadow-sm border border-[#004D40] border-l-4 border-[#004D40] hover:border-[#FFB300] hover:shadow-[0_24px_80px_rgba(255,179,0,0.18)] transition transform hover:-translate-y-1"
+                className="p-6 rounded-lg bg-[#FFF8E1] shadow-sm border border-l-4 border-[#004D40] hover:border-[#FFB300] hover:shadow-[0_24px_80px_rgba(255,179,0,0.18)] transition transform hover:-translate-y-1"
                 aria-labelledby={`feature-${i}`}
               >
                 <div className="mb-4">
@@ -265,7 +265,7 @@ export default function Home() {
             ].map((step) => (
               <div
                 key={step.num}
-                className="p-6 bg-[#004D40]/80 rounded-lg border border-[#FFB300] border-l-4 border-[#004D40] hover:border-white hover:shadow-[0_28px_90px_rgba(255,179,0,0.2)] transition transform hover:-translate-y-1"
+                className="p-6 bg-[#004D40]/80 rounded-lg border border-[#FFB300] border-l-4 hover:border-white hover:shadow-[0_28px_90px_rgba(255,179,0,0.2)] transition transform hover:-translate-y-1"
               >
                 <div className="flex items-center justify-center mb-3">
                   <div className="p-3 rounded-full bg-[#FFB300] text-[#004D40]">
@@ -290,7 +290,7 @@ export default function Home() {
             {testimonials.map((t, i) => (
               <figure
                 key={i}
-                className="p-6 rounded-lg bg-[#FAF3DD] shadow-sm border border-[#004D40] border-l-4 border-[#004D40] hover:border-[#FFB300] hover:shadow-[0_24px_80px_rgba(255,179,0,0.18)] transition transform hover:-translate-y-1"
+                className="p-6 rounded-lg bg-[#FAF3DD] shadow-sm border border-[#004D40] border-l-4 hover:border-[#FFB300] hover:shadow-[0_24px_80px_rgba(255,179,0,0.18)] transition transform hover:-translate-y-1"
               >
                 <blockquote>
                   <p className="text-sm italic">"{t.msg}"</p>

@@ -41,39 +41,73 @@ export default function Team() {
   ];
 
   return (
-    <div className="py-8 lg:py-12">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {members.map((m, i) => (
-          <article key={i} className="p-6 md:p-8 rounded-lg bg-[#FFF8E1] border border-[#004D40]/10 border-l-4 border-[#FFB300] hover:border-[#004D40] hover:shadow-[0_28px_90px_rgba(0,77,64,0.18)] transition transform hover:-translate-y-1">
-            <div className="flex items-start gap-4">
-              <img src={m.img} alt={m.name} className="w-20 h-20 rounded-full object-cover border-2 border-[#004D40]" />
-              <div className="flex-1">
-                <div className="flex items-start justify-between gap-2">
-                  <div>
-                    <h4 className="font-extrabold text-lg">{m.name}</h4>
-                    <div className="text-xs text-[#004D40]/70 mt-1">{m.role}</div>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <a href="#" aria-label="LinkedIn" className="text-[#004D40] hover:text-[#FFB300]"><SocialIcon type="linkedin" /></a>
-                    <a href="#" aria-label="Twitter" className="text-[#004D40] hover:text-[#FFB300]"><SocialIcon type="twitter" /></a>
-                    <a href="#" aria-label="Email" className="text-[#004D40] hover:text-[#FFB300]"><SocialIcon type="email" /></a>
-                  </div>
-                </div>
+    <section className="py-16 bg-white text-[#004D40]">
+      <div className="max-w-6xl mx-auto px-4 md:px-6">
+        <div className="text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-extrabold">Meet the team</h2>
+          <p className="text-[#004D40]/70 max-w-2xl mx-auto mt-2">
+            A small, committed team coordinating programs, grants and member services.
+          </p>
+        </div>
 
-                <p className="text-sm text-[#004D40]/80 mt-4">{m.bio}</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {members.map((m, i) => (
+            <article
+              key={i}
+              className="relative p-6 md:p-8 rounded-lg bg-[#FFF8E1] border border-[#004D40]/10 border-l-4 hover:border-[#004D40] hover:shadow-[0_28px_90px_rgba(0,77,64,0.18)] transition"
+            >
+              {/* Member Info */}
+              <div className="flex items-center gap-4">
+                <img
+                  src={m.img}
+                  alt={m.name}
+                  className="w-24 h-24 rounded-full object-cover border-2 border-[#004D40] shrink-0"
+                />
 
-                <div className="mt-4 flex items-center justify-between gap-3">
-                  <span className="text-xs px-2 py-1 rounded-full bg-[#004D40] text-white font-semibold">Core Team</span>
-                  <a href={`mailto:hello@gurukulcoop.org`} className="text-xs inline-flex items-center gap-2 text-[#004D40] hover:text-[#FFB300]">
-                    <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M22 6l-10 7L2 6" /></svg>
-                    Contact
-                  </a>
+                <div className="flex-1">
+                  <h4 className="font-extrabold text-lg leading-snug">{m.name}</h4>
+                  <div className="text-xs text-[#004D40]/70 mt-1">{m.role}</div>
                 </div>
               </div>
-            </div>
-          </article>
-        ))}
+
+              {/* Bio */}
+              <p className="text-sm text-[#004D40]/80 mt-4">{m.bio}</p>
+
+              {/* Social Icons (moved below bio) */}
+              <div className="mt-5 flex items-center gap-3 text-[#004D40]">
+                <a href="#" aria-label="LinkedIn" className="hover:text-[#FFB300]">
+                  <SocialIcon type="linkedin" />
+                </a>
+                <a href="#" aria-label="Twitter" className="hover:text-[#FFB300]">
+                  <SocialIcon type="twitter" />
+                </a>
+                <a href="#" aria-label="Email" className="hover:text-[#FFB300]">
+                  <SocialIcon type="email" />
+                </a>
+              </div>
+
+              {/* Contact Button */}
+              <div className="mt-4 flex items-center justify-between gap-3">
+                <a
+                  href={`mailto:hello@gurukulcoop.org`}
+                  className="text-xs inline-flex items-center gap-2 text-[#004D40] hover:text-[#FFB300]"
+                >
+                  <svg
+                    className="w-3 h-3"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.6"
+                  >
+                    <path d="M22 6l-10 7L2 6" />
+                  </svg>
+                  Contact
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
